@@ -1,0 +1,31 @@
+.grid {
+  max-width: 100vw;
+  max-height: 100vh;
+  line-height: 0px;
+}
+
+.cell {
+  height: 32px;
+  width: 32px;
+  box-shadow: inset 0px 0px 0px 1px black;
+  position: absolute;
+
+  &:hover {
+    box-shadow: blue inset 0px 0px 2px 2px;
+  }
+
+  &.marked {
+    background-color: turquoise;
+  }
+
+  &.invalid {
+    background-color: red;
+  }
+}
+
+.cell-text {
+  position: absolute;
+  font-size: 32px;
+  top: 11px;
+  left: 8px;
+}
